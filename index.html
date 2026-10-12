@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DigiVirtual - Official Website">
+    <title>DigiVirtual</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            color: #f1f5f9;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .logo {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 800;
+            background: linear-gradient(90deg, #38bdf8, #818cf8, #f472b6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hello {
+            font-size: clamp(1.5rem, 5vw, 3rem);
+            font-weight: 300;
+            color: #94a3b8;
+            margin-bottom: 2rem;
+            letter-spacing: 0.05em;
+        }
+
+        .divider {
+            width: 80px;
+            height: 4px;
+            border-radius: 2px;
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            margin: 0 auto 2rem auto;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: #64748b;
+            max-width: 480px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .badge {
+            display: inline-block;
+            margin-top: 2.5rem;
+            padding: 0.5rem 1.25rem;
+            border: 1px solid #334155;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            color: #94a3b8;
+            background: rgba(30, 41, 59, 0.5);
+        }
+
+        .glow {
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.25;
+            z-index: 1;
+        }
+
+        .glow-1 { background: #38bdf8; top: -150px; left: -150px; }
+        .glow-2 { background: #818cf8; bottom: -150px; right: -150px; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+
+    <div class="container">
+        <span class="logo">🚀</span>
+        <h1>DigiVirtual</h1>
+        <div class="divider"></div>
+        <p class="hello">Hello World 👋</p>
+        <p class="tagline">Official website is live. Great things are coming soon.</p>
+        <span class="badge">digivirtual-ir.github.io</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://digivirtual-ir.github.io/sitemap.xml
